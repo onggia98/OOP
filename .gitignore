@@ -1,0 +1,9 @@
+.DS_Store
+*.DS_Store
+
+# Giáo trình PDF gốc quá nặng (135MB) - không push
+raw/ebooks/*.pdf
+
+# Các file tạm
+*.pyc
+__pycache__/
