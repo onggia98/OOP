@@ -1,9 +1,9 @@
 # Context - Project OOP (Lập Trình Hướng Đối Tượng)
 
 ## Về tôi
-- Môn học: Lập Trình Hướng Đối Tượng (Object-Oriented Programming)
-- Mục tiêu: Hiểu sâu OOP + thi đạt điểm cao
-- Ngôn ngữ lập trình trong môn học: [Java / C++ / Python — điền vào]
+- Môn học: Lập Trình Hướng Đối Tượng — CSC10003, HCMUS ĐTTX
+- Mục tiêu: Thi đạt ≥ 8/10 (2 câu × 5đ, 90 phút, closed-book, 100% viết code C++)
+- Ngôn ngữ lập trình trong môn học: **C++** (so sánh Java, C# xuyên suốt)
 - Ngôn ngữ giải thích ưu tiên: Tiếng Việt (thuật ngữ kỹ thuật giữ tiếng Anh)
 
 ## Cách tôi muốn học
@@ -21,45 +21,41 @@
 - Ghi chú cá nhân: notes/
 
 ## Tiến độ học
-<!-- Cập nhật sau mỗi buổi học -->
-- Đã ôn xong: []
-- Đang ôn: []
-- Chưa ôn: [toàn bộ]
+> Cập nhật: 2026-05-19
+
+- **Đã ôn xong:** (chưa có — toàn bộ buổi 1–5 chưa bắt đầu)
+- **Đang ôn:** (chưa có)
+- **Bước tiếp theo:** Bắt đầu **Buổi 1 — Class Design** trong `study/plan.md`
+
+### Trạng thái tài liệu (hoàn tất 2026-05-19)
+- ✅ 10 slides (text + visual đầy đủ) → `knowledge/slide_chapters/`
+- ✅ 16 đề thi 2019–2026 đã OCR + phân tích → `knowledge/de_thi_analysis/`
+- ✅ 4 bộ source code đã review + sửa 11 lỗi → `notes/code_review.md`
+- ✅ Kế hoạch ôn tập 5 buổi → `study/plan.md`
+- ⬜ Flashcard → chưa tạo (tạo khi nói "flashcard [chủ đề]")
+- ⬜ Mock exam → chưa tạo (tạo khi nói "tạo đề thi")
+- ⬜ Đáp án mẫu đề 2025–2026 → chưa tạo
 
 ---
 
 ## Roadmap OOP
 
-### Tầng 1 — Foundation (học trước tiên)
-- [ ] Class & Object: khái niệm, thuộc tính, phương thức
-- [ ] Constructor & Destructor: khởi tạo, chaining, this()
-- [ ] Encapsulation: access modifiers, getter/setter, data hiding
+### Plan ôn thi thực tế (5 buổi — xem chi tiết ở study/plan.md)
 
-### Tầng 2 — Inheritance
-- [ ] Inheritance: đơn kế thừa, đa kế thừa, super/base
-- [ ] Method Overriding: @Override, runtime behavior
-- [ ] Abstract Class: khi nào dùng, so sánh với concrete class
-- [ ] Interface: contract, default method, multiple interface
+| Buổi | Chủ đề | Trạng thái | Ưu tiên |
+|------|--------|-----------|---------|
+| 1 | Class Design + Encapsulation (Slide 02, 03) | ⬜ Chưa làm | 🔴 |
+| 2 | Operator Overloading (Slide 04 + PhanSo.h) | ⬜ Chưa làm | 🔴 |
+| 3 | Big Three + Dynamic Memory (Slide 05 + DynamicArray) | ⬜ Chưa làm | 🔴 |
+| 4 | Inheritance + Polymorphism (Slide 07 08 09) | ⬜ Chưa làm | 🔴 |
+| 5 | Luyện đề thực tế (16 đề 2019–2026) | ⬜ Chưa làm | 🔴 |
 
-### Tầng 3 — Polymorphism
-- [ ] Compile-time polymorphism: Method Overloading
-- [ ] Runtime polymorphism: Dynamic Binding, upcasting/downcasting
-- [ ] instanceof & type checking
-
-### Tầng 4 — Design
-- [ ] SOLID Principles: SRP, OCP, LSP, ISP, DIP
-- [ ] Composition vs Inheritance: IS-A vs HAS-A
-- [ ] Design Patterns:
-  - [ ] Creational: Singleton, Factory, Builder
-  - [ ] Structural: Adapter, Decorator, Facade
-  - [ ] Behavioral: Observer, Strategy, Template Method
-- [ ] UML Class Diagram: notation, relationships
-
-### Tầng 5 — Advanced / Applied
-- [ ] Exception Handling trong OOP
-- [ ] Generic Classes & Collections
-- [ ] Dependency Injection
-- [ ] Real-world class design từ requirements
+### Roadmap đầy đủ theo tầng (tham khảo)
+- [ ] Tầng 1: Class & Object, Constructor/Destructor, Encapsulation
+- [ ] Tầng 2: Inheritance, Overriding, Abstract Class, Interface
+- [ ] Tầng 3 ⚠️: Overloading, Dynamic Binding, Upcasting/Downcasting
+- [ ] Tầng 4 ⚠️: SOLID, Composition vs Inheritance, Design Patterns, UML
+- [ ] Tầng 5: Templates/Generics, Exception Handling, DI
 
 ---
 

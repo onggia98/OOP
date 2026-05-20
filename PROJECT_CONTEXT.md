@@ -1,7 +1,7 @@
 # PROJECT CONTEXT — OOP (Lập Trình Hướng Đối Tượng)
 > File này chứa toàn bộ context đã được thiết lập qua các buổi làm việc với Claude.
 > Cowork đọc file này trước mỗi session để không cần train lại từ đầu.
-> Cập nhật lần cuối: 2026-05-15
+> Cập nhật lần cuối: 2026-05-19
 
 ---
 
@@ -17,11 +17,13 @@
 
 | Loại | Vị trí | Trạng thái |
 |---|---|---|
-| Ebook (PDF có text) | `raw/ebooks/` | Chưa tách chương |
-| Slide môn học | `raw/slides/` | Chưa tách chương |
-| Đề thi cũ (PDF) | `raw/de_thi_cu/` | Chưa phân tích |
-| Source code bài tập | `raw/source_code/` | Chưa review |
-| Script tách PDF→MD | `pdf_to_chapters.py` | Sẵn sàng dùng |
+| Ebook (PDF scanned, 375tr) | `raw/ebooks/` | Index xong → `knowledge/ebook_chapters/ebook_index.md`; nội dung on-demand |
+| Slide môn học (10 PPTX + 1 DOCX) | `raw/slides/` | ✅ Đã extract đầy đủ text + visual → `knowledge/slide_chapters/` |
+| Đề thi cũ 2019–2026 (16 đề) | `raw/de_thi_cu/` | ✅ OCR xong → `de_thi_transcript.md` + `topic_frequency_map.md` |
+| Source code bài tập (4 bộ) | `raw/source_code/` | ✅ Review + sửa 11 lỗi → `notes/code_review.md` |
+| Kế hoạch ôn tập | `study/plan.md` | ✅ Hoàn tất — 5 buổi cụ thể |
+| Flashcard | `study/flashcards/` | ⬜ Chưa tạo |
+| Mock exam | `study/mock_exams/` | ⬜ Chưa tạo |
 
 ---
 

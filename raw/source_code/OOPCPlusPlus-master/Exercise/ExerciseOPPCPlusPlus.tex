@@ -1,0 +1,544 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[unicode,hidelinks=true]{hyperref}
+\usepackage{indentfirst}
+\usepackage[margin=2cm]{geometry}
+
+\newcounter{exercise}[section]
+\newenvironment{exercise}[1][]{\refstepcounter{exercise}\par\medskip\textbf{Bài tập~\theexercise. #1} \rmfamily}{\medskip}
+
+\newcommand{\reference}[1]{(TLTK~#1)}
+
+\title{\bfseries BÀI TẬP LẬP TRÌNH HƯỚNG ĐỐI TƯỢNG}
+\author{Tổng hợp: Thi Minh Nhựt \and Email: \texttt{thiminhnhut@gmail.com}}
+\date{Thời gian: Ngày 30 tháng 06 năm 2018}
+
+\begin{document}
+    \maketitle
+    \begin{exercise}
+        Xây dựng lớp cơ sở HOCSINH có các thông tin: họ tên, lớp, điểm toán, lý, hóa và các phương thức nhập, xuất dữ liệu, tính điểm trung bình.
+
+        Viết chương trình chính thực hiện nhập vào một danh sách n học sinh, sau đó hiển thị danh sách những học sinh có điểm trung bình lớn hơn hoặc bằng 5.
+
+        \reference{\cite{luanvan.net.vn}}
+    \end{exercise}
+
+    \begin{exercise}
+        Một cửa hàng bán thực phẩm khô gồm 2 loại: loại đóng hộp và loại không đóng hộp. Để quản lý, người ta xây dựng một lớp THUCPHAM gồm các thông tin: tên thực phẩm, giá cả.
+
+        Từ đó dẫn xuất ra hai lớp TPHOP (thực phẩm hộp) có thêm thông tin số hộp và TPKHOP (thực phẩm không hộp) có thêm thông tin khối lượng.
+
+        Cài đặt ba lớp trên có các phương thức nhập, xuất dữ liệu.
+
+        Viết chương trình thực hiện nhập và xuất hai thực phẩm thuộc hai lớp TPHOP và TPKHOP.
+
+        \reference{\cite{luanvan.net.vn}}
+    \end{exercise}
+
+    \begin{exercise}
+        Tạo lớp CARD để quản lý sách trong thư viện. Yêu cầu mỗi loại sách cần lưu trữ các thông tin: tựa đề sách, tác giả, số lượng sách. Xây dựng các phương thức để nhập và hiển thị thông tin về sách.
+
+        Viết chương trình chính thực hiện: Nhập thông tin cho n cuốn sách và hiển thị ra màn hình thông tin về những cuốn sách có số lượng lớn nhất.
+
+        \reference{\cite{luanvan.net.vn}}
+    \end{exercise}
+
+    \begin{exercise}
+        Xây dựng lớp DATE có các thông tin: ngày, tháng, năm và các phương thức nhập xuất dữ liệu.
+
+        Xây dựng lớp NHANSU với các thông tin: tên, ngày sinh (kiểu date), số chứng minh nhân dân và các phương thức nhập xuất dữ liệu.
+
+        Viết chương trình chính thực hiện nhập vào một danh sách n nhân sự, sau đó sắp xếp danh sách (theo thứ tự A, B, C\ldots) và hiển thị danh sách đã sắp ra màn hình.
+
+        \reference{\cite{luanvan.net.vn}}
+    \end{exercise}
+
+    \begin{exercise}
+        Xây dựng lớp PHANSO có các thông tin: tử số, mẫu số và các phương thức thiết lập phân số với hai tham số (tử số và mẫu số), phương thức nhập phân số, phương thức xuất phân số ra màn hình (dạng tử số/mẫu số), phép toán cộng và nhân hai phân số.
+
+        Viết chương trình chính thực hiện nhập hai phân số, tính tổng và tích của chúng và hiển thị kết quả ra màn hình.
+
+        \reference{\cite{luanvan.net.vn}}
+    \end{exercise}
+
+    \begin{exercise}
+        Xây dựng lớp xe gồm thông tin: nhãn hiệu, giá, năm sản xuất (yêu cầu các thông tin này chỉ có ở lớp XE và các lớp dẫn xuất từ lớp XE được phép truy cập).
+
+        Xây dựng lớp OTO kế thừa từ lớp XE có thêm các thông tin: số chỗ ngồi, trọng tải và các phương thức xuất nhập dữ liệu.
+
+        Viết chương trình chính thực hiện nhập vào một danh sách n ô tô, sau đó hiển thị danh sách vừa nhập.
+
+        \reference{\cite{luanvan.net.vn}}
+    \end{exercise}
+
+    \begin{exercise}
+        Xây dựng lớp CDCANHAC có các thông tin: tên đĩa, số lượng bài, giá tiền và các phương thức nhập xuất dữ liệu.
+
+        Viết một chương trình nhập vào danh sách gồm thông tin của n đĩa CD, sau đó hiển thị danh sách vừa nhập. Tìm và hiển thị thông tin của đĩa CD có số bài hát lớn nhất.
+
+        \reference{\cite{luanvan.net.vn}}
+    \end{exercise}
+
+    \begin{exercise}
+        Xây dựng lớp VECTOR có các thông tin về 2 tọa độ trong mặt phẳng hai chiều (x, y) và các phương thức:
+            \begin{itemize}
+                \item Phương thức nhập để nhập hai tọa độ x, y.
+                \item Phương thức xuất để hiển thị tọa độ của vector ra màn hình.
+                \item Các phép toán cộng, trừ hai vector.
+            \end{itemize}
+
+        Viết chương trình chính thực hiện nhập vào 2 vector A, B. Tính tổng và hiệu của chúng và in kết quả ra màn hình.
+
+        \reference{\cite{luanvan.net.vn}}
+    \end{exercise}
+
+    \begin{exercise}
+        Xây dựng lớp DATE có các thông tin: ngày, tháng, năm và các phương thức nhập, xuất dữ liệu.
+
+        Để quản lý hàng hóa, người ta xây dựng lớp PHIEUNHAP với các thông tin: tên hàng, ngày nhập, số lượng và các phương thức nhập xuất dữ liệu.
+
+        Viết chương trình chính thực hiện: Nhập vào một danh sách gồm n phiếu nhập và hiển thị ra màn hình thông tin về những phiếu nhập có số lượng hàng lớn hơn 100.
+
+        \reference{\cite{luanvan.net.vn}}
+    \end{exercise}
+
+    \begin{exercise}
+        Xây dựng lớp PERSON có các thông tin: họ tên, giới tính, ngày sinh và các phương thức nhập xuất dữ liệu.
+
+        Xây dựng lớp dẫn xuất STUDENT để quản lý sinh viên có thêm các thông tin: điểm thi, lớp và các phương thức nhập xuất dữ liệu.
+
+        Viết chương trình chính thực hiện nhập vào một danh sách n sinh viên, sau đó hiển thị danh sách vừa nhập.
+
+        \reference{\cite{luanvan.net.vn}}
+    \end{exercise}
+
+    \begin{exercise}
+        Xây dựng lớp DATHUC có các thuộc tính riêng là bậc của đa thức, mảng các số nguyên chứa các hệ số của đa thức cùng với các phương thức:
+            \begin{itemize}
+                \item Các toán tử tạo lập.
+                \item Phép cộng, trừ, nhân đa thức.
+                \item In ra màn hình một đa thức bao gồm bậc và giá trị của các hệ số.
+            \end{itemize}
+
+        Xây dựng chương trình ứng dụng thực hiện nhập vào hai đa thức, hỏi xem người dùng muốn thực hiện công việc gì (cộng, trừ, nhân, đa thức) sau đó in kết quả ra màn hình.
+
+        \reference{\cite{123doc.org}}
+    \end{exercise}
+
+    \begin{exercise}
+        Xây dựng lớp phân số với hai thuộc tín riêng xác định tử số và mẫu số của phân số và xây dựng các phương thức:
+            \begin{itemize}
+                \item Các toán tử tạo lập.
+                \item Các phép toán cộng, trừ, nhân, chia hai phân số.
+                \item Phép rút gọn phân số.
+            \end{itemize}
+
+        Viết một chương trình ứng dụng, hỏi người dùng muốn thực hiện công việc gì (tính tổng, hiệu, tích, thương, tối giản), sau đó in kết quả ra màn hình.
+
+        \reference{\cite{123doc.org}}
+    \end{exercise}
+
+    \begin{exercise}
+        Một đơn vị sản xuất gồm có các cán bộ là công nhân, kỹ sư và nhân viên.
+            \begin{itemize}
+                \item Mỗi cán bộ cần quản lý các thuộc tính: họ tên, năm sinh, giới tính và địa chỉ.
+                \item Các công nhân cần quản lý: Bậc (công nhân bận 3/7, bậc 4/7,\ldots)
+                \item Các kỹ sư cần quản lý: Ngành đào tạo.
+                \item Các công nhân viên phục vụ cần quản lý thông tin: công việc.
+            \end{itemize}
+
+        Yêu cầu:
+            \begin{itemize}
+                \item Xây dựng các lớp NhanVien, CongNhan, KySu kế thừa từ lớp CanBo.
+                \item Xây dựng các hàm để nhập, hiển thị thông tin và kiểm tra về các thuộc tính của các lớp.
+                \item Xây dựng lớp QLCB cài đặt các phương thức thực hiện các chức năng như sau:
+                    \begin{itemize}
+                        \item Nhập thông tin mới cho cán bộ (Hỏi người dùng muốn nhập cho: công nhân, kỹ sư hay nhân viên và nhập đúng thông tin cho đối tượng đó).
+                        \item Tìm kiếm theo họ tên.
+                        \item Hiển thị thông tin về danh sách cán bộ.
+                        \item Thoát khỏi chương trình.
+                    \end{itemize}
+            \end{itemize}
+
+        \reference{\cite{123doc.org}}
+    \end{exercise}
+
+    \begin{exercise}
+        Xây dựng một thư viện quản lý các tài liệu bao gồm: Sách, Tạp chí và Báo.
+            \begin{itemize}
+                \item Mỗi tài liệu có các thuộc tính: mã tài liệu, tên nhà xuất bản, số phát hành.
+                \item Các loại sách cần quản lý: tên tác giả, số trang.
+                \item Các tạp chí cần quản lý: số phát hành, tháng phát hành.
+                \item Các báo cần quản lý: ngày phát hành.
+            \end{itemize}
+
+        Yêu cầu:
+            \begin{itemize}
+                \item Xây dựng các lớp để quản lý các loại tài liệu trên sao cho việc sử dụng lại được nhiều nhất.
+                \item Xây dựng lớp quản lý tài liệu cài đặt các phương thức thực hiện các công việc sau:
+                    \begin{itemize}
+                        \item Nhập thông tin về các tài liệu (Hỏi người dùng muốn nhập thông tin cho tài liệu nào: Sách, Tạp chí hay Báo và nhập đúng thông tin cho loại tài liệu đó).
+                        \item Hiển thị thông tin về các loại tài liệu.
+                        \item Tìm kiếm tài liệu theo loại.
+                        \item Thoát khỏi chương trình.
+                    \end{itemize}
+            \end{itemize}
+
+        \reference{\cite{123doc.org}}
+    \end{exercise}
+
+    \begin{exercise}
+        Các thí sinh dự thi đại học bao gồm các khối thi A, B, C.
+            \begin{itemize}
+                \item Các thí sinh cần quản lý các thuộc tính: số báo danh, họ tên, địa chỉ và ưu tiên.
+                \item Thí sinh thi khối A quản lý các môn: toán, lý, hóa.
+                \item Thí sinh thi khối B quản lý các môn: toán, hóa, sinh.
+                \item Thí sinh thi khối C quản lý các môn: văn, sử, địa.
+            \end{itemize}
+
+        Yêu cầu:
+            \begin{itemize}
+                \item Xây dựng các lớp để quản lý thí sinh sao cho sử dụng lại được nhiều nhất.
+                \item Xây dựng lớp TuyenSinh cài đặt các phương thức thực hiện các nhiệm vụ sau:
+                    \begin{itemize}
+                        \item Nhập thông tin về các thí sinh dự thi.
+                        \item Hiển thị thông tin về các thí sinh đã trúng tuyển (Giả sử điểm chuẩn cho khối A là 15 điểm, điểm chuẩn co khối B là 16 điểm và điểm chuẩn cho khối C là 13.5 điểm).
+                        \item Tìm kiếm thí sinh theo số báo danh.
+                        \item Kết thúc chương trình.
+                    \end{itemize}
+            \end{itemize}
+
+        \reference{\cite{123doc.org}}
+    \end{exercise}
+
+    \begin{exercise}
+        Để quản lý các hộ dân trong một khu phố, người ta quản lý các thông tin như sau:
+            \begin{itemize}
+                \item Với mỗi hộ dân có các thuộc tính:
+                    \begin{itemize}
+                        \item Số thành viên trong một hộ (số người).
+                        \item Số nhà của hộ dân đó (số nhà được gắn cho mỗi hộ dân).
+                        \item Thông tin về mỗi cá nhân trong gia đình.
+                    \end{itemize}
+                \item Với mỗi cá nhân, người ta quản lý các thông tin như sau: số chứng minh nhân dân, họ và tên, tuổi, năm sinh, nghề nghiệp.
+            \end{itemize}
+
+            Yêu cầu:
+                \begin{itemize}
+                    \item Xây dựng lớp Nguoi để quản lý thông tin về mỗi cá nhân.
+                    \item Xây dựng lớp KhuPho để quản lý thông tin về các hộ trong gia đình.
+                    \item Viết các phương thức nhập và hiển thị thông tin cho mỗi hộ gia đình.
+                    \item Cài đặt chương trình thực hiện các công việc sau:
+                        \begin{itemize}
+                            \item Nhập một dãy gồm n hộ dân (với n được nhập từ bàn phím).
+                            \item Tìm kiếm thông tin về hộ dân theo họ tên hoặc theo số nhà.
+                            \item Hiển thị thông tin cho toàn bộ các hộ dân trong khu phố.
+                            \item Thoát khỏi chương trình.
+                        \end{itemize}
+                \end{itemize}
+
+                \reference{\cite{123doc.org}}
+    \end{exercise}
+
+    \begin{exercise}
+        Để quản lý khách hàng đến thuê phòng của một khách sạn, người ta cần quản lý các thông tin sau:
+            \begin{itemize}
+                \item Số ngày trọ, loại phòng trọ, giá phòng và các thông tin cá nhân về mỗi khách trọ.
+                \item Với mỗi cá nhân, người ta cần quản lý các thông tin: họ và tên, năm sinh, số chứng minh nhân dân.
+            \end{itemize}
+
+        Yêu cầu:
+            \begin{itemize}
+                \item Hãy xây dựng lớp Nguoi để quản lý thông tin về mỗi cá nhân.
+                \item Xây dựng lớp KhachSan để quản lý thông tin về khách thuê phòng.
+                \item Viết các phương thức: nhập, hiển thị các thông tin về mỗi khách thuê phòng.
+                \item Cài đặt chương trình, thực hiện các công việc sau:
+                    \begin{itemize}
+                        \item Nhập vào một dãy gồm n khách trọ (với n được nhập từ bàn phím).
+                        \item Tìm kiếm thông tin những khách thuê phòng theo họ và tên.
+                        \item Tính tiền cho khách hàng khi thanh toán trả phòng.
+                        \item Thoát khỏi chương trình.
+                    \end{itemize}
+            \end{itemize}
+
+            \reference{\cite{123doc.org}}
+    \end{exercise}
+
+    \begin{exercise}
+        Để quản lý hồ sơ học sinh của trường THPT, người ta cần quản lý những thông tin như sau:
+            \begin{itemize}
+                \item Các thông tin về: lớp, khóa học, kỳ học và các thông tin cá nhân của mỗi học sinh.
+                \item Với mỗi học sinh, các thông tin cá nhân cần quản lý bao gồm: họ và tên, tuổi, năm sinh, quê quán, giới tính.
+            \end{itemize}
+
+        Yêu cầu:
+            \begin{itemize}
+                \item Hãy xây dựng lớp Nguoi để quản lý các thông tin cá nhân của mỗi học sinh.
+                \item Xây dựng lớp HSHocSinh (hồ sơ học sinh) để quản lý các thông tin về hồ sơ cá nhân của mỗi học sinh.
+                \item Xây dựng các phương thức: nhập, hiển thị các thông tin về hồ sơ cá nhân của mỗi học sinh.
+                \item Cài đặt chương trình thực hiện các công việc sau:
+                    \begin{itemize}
+                        \item Nhập vào một danh sách gồm n học sinh (với n được nhập từ bàn phím).
+                        \item Hiển thị ra màn hình tất cả các học sinh nữ và sinh năm 1985.
+                        \item Tìm kiếm học sinh theo quê quán.
+                        \item Thoát khỏi chương trình.
+                    \end{itemize}
+            \end{itemize}
+
+            \reference{\cite{123doc.org}}
+    \end{exercise}
+
+    \begin{exercise}
+        Khoa công nghệ thông tin cần quản lý việc thanh toán tiền lương cho các cán bộ giáo viên trong khoa. Để quản lý được, nhà quản lý cần có những thông tin sau:
+            \begin{itemize}
+                \item Với mỗi cán bộ, có các thông tin chung như sau: lương cứng, thưởng, phạt, lương thực lĩnh và các thông tin cá nhân của mỗi cán bộ giáo viên.
+                \item Các thông tin cá nhân của mỗi cán bộ giáo viên: họ và tên, năm sinh, quê quán, số chứng minh nhân dân.
+            \end{itemize}
+
+        Yêu cầu:
+            \begin{itemize}
+                \item Hãy xây dựng lớp Nguoi để quản lý thông tin về cá nhân của mỗi cán bộ giáo viên.
+                \item Xây dựng lớp CBGV (cán bộ giáo viên) để quản lý thông tin chung về mỗi cán bộ giáo viên.
+                \item Xây dựng các phương thức: nhập, hiển thị các thông tin cá nhân của mỗi cán bộ giáo viên.
+                \item Tính lương thực lĩnh cho mỗi cán bộ nếu công thức tính lương được tính như sau: Lương thực lĩnh = Lương cứng + Thưởng - Phạt.
+                \item Viết chương trình thực hiện các công việc sau:
+                    \begin{itemize}
+                        \item Nhập vào một danh sách gồm n cán bộ giáo viên (với n được nhập từ bàn phím).
+                        \item Tìm kiếm thông tin về cán bộ giáo viên theo quê quán.
+                        \item Hiển thị thông tin về cán bộ giáo viên có lương thực lĩnh trên 5 triện đồng một tháng.
+                        \item Thoát khỏi chương trình.
+                    \end{itemize}
+            \end{itemize}
+
+            \reference{\cite{123doc.org}}
+    \end{exercise}
+
+    \begin{exercise}
+        Thư viện của trường đại học KHTN có nhu cầu cần quản lý việc mượn sách. Sinh viên đăng ký và tham gia mượn sách thông qua các thẻ mượn mà thư viện đã thiết kế.
+            \begin{itemize}
+                \item Với mỗi thẻ mượn, có các thông tin sau: số phiếu mượn, ngày mượn, hạn trả, số hiệu sách và các thông tin riêng về mỗi sinh viên.
+                \item Các thông tin riêng về mỗi sinh viên bao gồm: họ và tên, năm sinh, lớp và mã số sinh viên.
+            \end{itemize}
+
+        Yêu cầu:
+            \begin{itemize}
+                \item Xây dựng lớp SinhVien để quản lý thông tin riêng về mỗi sinh viên.
+                \item Xây dựng lớp TheMuon để quản lý việc đọc sách của mỗi đọc giả.
+                \item Xây dựng các phương thức để nhập và hiển thị các thông tin riêng cho mỗi sinh viên.
+                \item Nhập vào một danh sách các sinh viên, sau đó thực hiện các công việc sau:
+                    \begin{itemize}
+                        \item Tìm kiếm thông tin về sinh viên theo mã số sinh viên.
+                        \item Hiển thị thông tin về các sinh viên đã đến hạn trả sách theo ngày hiện tại.
+                        \item Thoát khỏi chương trình.
+                    \end{itemize}
+            \end{itemize}
+
+            \reference{\cite{123doc.org}}
+    \end{exercise}
+
+    \begin{exercise}
+        Để quản lý biên lai thu tiền điện, người ta cần các thông tin sau:
+            \begin{itemize}
+                \item Với mỗi biên lai, có các thông tin sau: thông tin về hộ sử dụng điện, chỉ số cũ, chỉ số mới, số tiền phải trả của mỗi hộ sử dụng điện.
+                \item Các thông tin riêng của mỗi hộ sử dụng điện bao gồm: họ tên chủ hộ, số nhà, mã số công tơ điện của hộ sử dụng điện.
+            \end{itemize}
+
+        Yêu cầu:
+            \begin{itemize}
+                \item Hãy xây dựng lớp KhachHang để lưu trữ các thông tin riêng của mỗi hộ sử dụng điện.
+                \item Xây dựng lớp BienLai để quản lý việc sử dụng và thanh toán tiền điện của các hộ dân.
+                \item Xây dựng các phương thức nhập và hiển thị thông tin riêng của mỗi hộ sử dụng điện.
+                \item Cài đặt chương trình thực hiện các công việc sau:
+                    \begin{itemize}
+                        \item Nhập vào các thông tin cho n hộ sử dụng điện.
+                        \item Hiển thị thông tin về các biên lai đã nhập.
+                        \item Tính tiền điện phải trả cho mỗi hộ dân, nếu giả sử rằng tiền phải trả được tính theo công thức:
+                            \begin{center}
+                                \begin{tabular}{|l|l|}
+                                    \hline
+                                    \textbf{Số điện} & \textbf{Giá tiền}\\
+                                    \hline
+                                    Dưới 50 số & 1250 VNĐ/1 số\\
+                                    \hline
+                                    Từ 50 đến dưới 100 số & 1500 VNĐ/1 số\\
+                                    \hline
+                                    Từ 100 số trở lên & 2000 VNĐ/1 số\\
+                                    \hline
+                                    \end{tabular}
+                            \end{center}
+                    \end{itemize}
+            \end{itemize}
+
+            \reference{\cite{123doc.org}}
+    \end{exercise}
+
+    \begin{exercise}
+        Để xử lý văn bản, người ta xây dựng lớp VanBan có thuộc tính riêng là một xâu ký tự. Yêu cầu:
+            \begin{itemize}
+                \item Xây dựng một hàm tạo không có và có đối số như sau: VanBan(), VanBan(String st).
+                \item Xây dựng phương thức đếm số từ của một xâu.
+                \item Xây dựng phương thức đếm số ký tự H (không phân biệt chữ hoa và chữ thường) của xâu.
+                \item Chuẩn hóa một xâu theo tiêu chuẩn (Ở đầu và ở cuối của một xâu không có ký tự trống, ở giữa xâu không có 2 ký tự trắng liền kề nhau).
+                \item Xây dựng một menu hỏi người xử dụng muốn thực hiện công việc nào (đếm từ, đếm số ký tự H hay chuẩn hóa xâu). Sau đó hiển thị kết quả ra màn hình.
+            \end{itemize}
+
+            \reference{\cite{123doc.org}}
+    \end{exercise}
+
+    \begin{exercise}
+        Xây dựng lớp SoPhuc có các thuộc tính riêng, gồm phanThuc, phanAo với kiểu double. Yêu cấu:
+            \begin{itemize}
+                \item Xây dựng các hàm khởi tạo như sau: SoPhuc(), SoPhuc(double a, double b).
+                \item Xây dựng các phương thức:
+                    \begin{itemize}
+                        \item Nhập vào một số phức.
+                        \item Hiển thị một số phức.
+                        \item Các phép toán trên số phức (cộng, trừ, nhân, chia).
+                    \end{itemize}
+                \item Cài đặt chương trình thực hiện: nhập vào hai số phức A, B, sau đó hỏi người dùng muốn thực hiện chức năng nào:
+                    \begin{itemize}
+                        \item Tính tổng hai số phức.
+                        \item Tính hiệu hai số phức.
+                        \item Tính tích hai số phức.
+                        \item Tính thương hai số phức.
+                    \end{itemize}
+
+                Rồi hiển thị kết quả ra màn hình.
+            \end{itemize}
+
+            \reference{\cite{123doc.org}}
+    \end{exercise}
+
+    \begin{exercise}
+        Xây dựng một lớp MaTran có các thuộc tính riêng như sau:
+            \begin{itemize}
+                \item Số dòng số cột của ma trận.
+                \item Một mảng hai chiều để lưu trữ các phần tử của ma trận.
+            \end{itemize}
+        Yêu cầu:
+            \begin{itemize}
+                \item Xây dựng hàm tạo: MaTran(), MaTran(int n, int m) (với n dòng và m cột).
+                \item Xây dựng các phương thức: nhập vào và hiển thị một ma trận.
+                \item Xây dựng các phương thức tính tổng, hiệu và tích của hai ma trận.
+                \item Cài đặt chương trình thực hiện:
+                    \begin{itemize}
+                        \item Tính tổng hai ma trận.
+                        \item Tính tích hai ma trận.
+                        \item Tính thương hai ma trận.
+                    \end{itemize}
+
+                Hiển thị kết quả ra màn hình.
+            \end{itemize}
+
+            \reference{\cite{123doc.org}}
+    \end{exercise}
+
+    \begin{exercise}
+        Một công ty được giao nhiệm vụ quản lý các phương tiện giao thông gồm các loại: ô tô, xe máy, xe tải.
+            \begin{itemize}
+                \item Mỗi loại phương tiện giao thông cần quản lý: hãng sản xuất, năm sản xuất, giá bán và màu.
+                \item Các ô tô cần quản lý: sô chỗ ngồi, kiểu động cơ.
+                \item Các xe máy cần quản lý: công suất.
+                \item Các xe tải cần quản lý: trọng tải.
+            \end{itemize}
+        Yêu cầu:
+            \begin{itemize}
+                \item Xây dựng các lớp: XeTai, XeMay, OTo kế thừa từ lớp PTGT.
+                \item Xây dựng các hàm để nhập, hiển thị và kiểm tra các thuộc tính của các lớp.
+                \item Xây dựng lớp QLPTGT (quản lý phương tiện giao thông) thực hiện các chức năng sau:
+                    \begin{itemize}
+                        \item Nhập đăng ký phương tiện.
+                        \item Tìm phương tiện giao thông theo màu hoặc theo năm sản xuất.
+                        \item Kết thúc chương trình.
+                    \end{itemize}
+            \end{itemize}
+
+            \reference{\cite{123doc.org}}
+    \end{exercise}
+
+    \begin{exercise}
+        Lớp phân số có các thuộc tính riêng gồm: tuSo, mauSo. Yêu cầu:
+            \begin{itemize}
+                \item Xây dựng các toán tử khởi tạo: PhanSo(), PhanSo(int tu, int mau).
+                \item Xây dựng các phương thức:
+                    \begin{itemize}
+                        \item Nhập vào một phân số.
+                        \item Hiển thị một phân số.
+                        \item Rút gọn một phân số.
+                        \item Thực hiện các phép toán trên phân số (cộng, trừ, nhân, chia phân số).
+                    \end{itemize}
+                \item Cài đặt chương trình thực hiện: nhập vào hai phân số A và B, sau đó thực hiện các yêu cầu của người dùng rồi hiển thị kết quả ra màn hình.
+            \end{itemize}
+
+            \reference{\cite{123doc.org}}
+    \end{exercise}
+
+    \begin{exercise}
+        \begin{itemize}
+            \item Xây dựng lớp DaGiac gồm các thuộc tính như sau:
+                \begin{itemize}
+                    \item Số cạnh của một đa giác.
+                    \item Mảng các số nguyên chứa kích thước các cạnh của đa giác.
+                \end{itemize}
+            và các phương thức:
+                \begin{itemize}
+                    \item Tính chu vi.
+                    \item In giá trị các cạnh của một đa giác.
+                \end{itemize}
+            \item Xây dựng lớp TamGiac kế thừa từ lớp DaGiac, trong đó viết hàm để tính chu vi và xây dựng thêm phương thức tính diện tích tam giác.
+            \item Xây dựng một ứng dụng để nhập vào một dãy gồm n tam giác rồi in ra màn hình các cạnh của tam giác thỏa mãn định lý Pytago.
+        \end{itemize}
+
+        \reference{\cite{123doc.org}}
+    \end{exercise}
+
+    \begin{exercise}
+        Mỗi một điểm trong mặt phẳng được xác định bởi duy nhất hai giá trị là hoành độ và tung độ. Yêu cầu:
+            \begin{itemize}
+                \item Hãy xây dựng lớp Diem cùng với các đối tượng điểm trong mặt phẳng và xây dựng phương thức sau:
+                    \begin{itemize}
+                        \item Toán tử tạo lập.
+                        \item Phương thức in ra một đối tượng Diem.
+                        \item Tính khoảng cách giữa hai điểm.
+                    \end{itemize}
+                \item Mỗi tam giác trong mặt phẳng được xác định bởi 3 điểm. Hãy xây dựng lớp TamGiac với 3 thuộc tính riêng là 3 đối tượng thuộc lớp Diem và các phương thức:
+                    \begin{itemize}
+                        \item Xây dựng phương thức tạo lập: TamGiac(), TamGiac(Diem d1, Diem d2, Diem d3).
+                        \item Tính chu vi tam giác.
+                        \item Tính diện tích tam giác.
+                    \end{itemize}
+                \item Nhập vào một danh sách các tam giác, đưa ra tổng chu vi và tổng diện tích của các tam giác vừa nhập.
+            \end{itemize}
+
+            \reference{\cite{123doc.org}}
+    \end{exercise}
+
+    \begin{exercise}
+        Mỗi một điểm trong mặt phẳng được xác định bởi duy nhất hai giá trị là hoành độ và tung độ. Yêu cầu:
+            \begin{itemize}
+                \item Hãy xây dựng lớp Diem cùng với các đối tượng điểm trong mặt phẳng và xây dựng phương thức sau:
+                    \begin{itemize}
+                        \item Xây dựng toán tử tạo lập.
+                        \item Phương thức in một đối tượng thuộc lớp điểm.
+                        \item Tính khoảng cách giữa hai điểm.
+                    \end{itemize}
+                \item Xây dựng lớp HinhTron chứa các đối tượng là các hình tròn với 2 thuộc tính là 1 đối tượng thuộc lớp Diem để xác định tâm của hình tròn và một giá trị nguyên để xác định bán kính của hình tròn. Cái đặt các phương thức:
+                    \begin{itemize}
+                        \item Phương thức khởi tạo: HinhTron() và HinhTron(Diem d, int bk);
+                        \item Tính chu vi và diện tích hình tròn.
+                    \end{itemize}
+                \item Nhập vào một danh sách các hình tròn, hiển thị thông tin về hình tròn giao với nhiều hình tròn khác nhất trong danh sách những hình tròn đã nhập vào.
+            \end{itemize}
+
+            \reference{\cite{123doc.org}}
+    \end{exercise}
+
+\begin{thebibliography}{99}
+    \bibitem{luanvan.net.vn} \url{https://goo.gl/rn1A91}
+    \bibitem{123doc.org} \url{https://goo.gl/V7TkYZ}
+\end{thebibliography}
+\end{document}
