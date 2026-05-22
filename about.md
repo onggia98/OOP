@@ -21,34 +21,40 @@
 - Ghi chú cá nhân: notes/
 
 ## Tiến độ học
-> Cập nhật: 2026-05-19
+> Cập nhật: 2026-05-22
 
-- **Đã ôn xong:** (chưa có — toàn bộ buổi 1–5 chưa bắt đầu)
-- **Đang ôn:** (chưa có)
-- **Bước tiếp theo:** Bắt đầu **Buổi 1 — Class Design** trong `study/plan.md`
+- **Đã ôn xong:** (chưa có — bắt đầu ôn từ 20/05/2026)
+- **Đang ôn:** (chưa có — tất cả tài liệu đã sẵn sàng)
+- **Bước tiếp theo:** Bắt đầu **Ngày 1 — Class Design** trong `study/plan_7ngay.md`
 
-### Trạng thái tài liệu (hoàn tất 2026-05-19)
+### Trạng thái tài liệu (hoàn tất 2026-05-22)
 - ✅ 10 slides (text + visual đầy đủ) → `knowledge/slide_chapters/`
 - ✅ 16 đề thi 2019–2026 đã OCR + phân tích → `knowledge/de_thi_analysis/`
 - ✅ 4 bộ source code đã review + sửa 11 lỗi → `notes/code_review.md`
-- ✅ Kế hoạch ôn tập 5 buổi → `study/plan.md`
-- ⬜ Flashcard → chưa tạo (tạo khi nói "flashcard [chủ đề]")
-- ⬜ Mock exam → chưa tạo (tạo khi nói "tạo đề thi")
-- ⬜ Đáp án mẫu đề 2025–2026 → chưa tạo
+- ✅ Kế hoạch ôn tập 7 ngày chi tiết → `study/plan_7ngay.md`
+- ✅ 4 bộ flashcard → `study/flashcards/` (class_design, operator, big_three, inheritance)
+- ✅ 3 đề thi thử + đáp án → `study/mock_exams/` (mock_01, 02, 03)
+- ✅ Đáp án mẫu đề 2025HK2 + 2026HK1 → `study/mock_exams/`
+- ✅ 4 bộ bài tập theo ngày → `study/exercises/` (day1, day2-3, day4, day5)
+- ✅ Concept map đầy đủ → `notes/concept_map.md`
+- ✅ Cheatsheet tra cứu nhanh → `notes/cheatsheet.md`
+- ✅ Điểm yếu hay nhầm → `notes/weak_points.md`
 
 ---
 
 ## Roadmap OOP
 
-### Plan ôn thi thực tế (5 buổi — xem chi tiết ở study/plan.md)
+### Plan ôn thi thực tế (7 ngày — xem chi tiết ở study/plan_7ngay.md)
 
-| Buổi | Chủ đề | Trạng thái | Ưu tiên |
-|------|--------|-----------|---------|
-| 1 | Class Design + Encapsulation (Slide 02, 03) | ⬜ Chưa làm | 🔴 |
-| 2 | Operator Overloading (Slide 04 + PhanSo.h) | ⬜ Chưa làm | 🔴 |
-| 3 | Big Three + Dynamic Memory (Slide 05 + DynamicArray) | ⬜ Chưa làm | 🔴 |
-| 4 | Inheritance + Polymorphism (Slide 07 08 09) | ⬜ Chưa làm | 🔴 |
-| 5 | Luyện đề thực tế (16 đề 2019–2026) | ⬜ Chưa làm | 🔴 |
+| Ngày | Ngày thi | Chủ đề | Trạng thái | Ưu tiên |
+|------|----------|--------|-----------|---------|
+| 1 | 20/05 (T4) | Class Design + Encapsulation | ⬜ Chưa làm | 🔴 |
+| 2 | 21/05 (T5) | Operator Overloading — lý thuyết | ⬜ Chưa làm | 🔴 |
+| 3 | 22/05 (T6) | Operator Overloading — luyện đề | ⬜ Chưa làm | 🔴 |
+| 4 | 23/05 (T7) | Big Three + Dynamic Memory | ⬜ Chưa làm | 🔴 |
+| 5 | 24/05 (CN) | Inheritance + Polymorphism | ⬜ Chưa làm | 🔴 |
+| 6 | 25/05 (T2) | Luyện đề thực tế (2019–2026) | ⬜ Chưa làm | 🔴 |
+| 7 | 26/05 (T3) | Mock exam 90 phút + review | ⬜ Chưa làm | 🔴 |
 
 ### Roadmap đầy đủ theo tầng (tham khảo)
 - [ ] Tầng 1: Class & Object, Constructor/Destructor, Encapsulation
